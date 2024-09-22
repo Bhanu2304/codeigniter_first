@@ -1,0 +1,367 @@
+CRITICAL - 2024-09-22 11:43:16 --> ErrorException: fopen(http://localhost/codeigniter4-first/public/uploads/index.html): Failed to open stream: HTTP wrapper does not support writeable connections
+[Method: POST, Route: file_upload]
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 184.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(http://localhost/codeigniter4-first/public/uploads/index.html): Failed to open stream: HTTP wrapper does not support writeable connections', 'C:\\xampp\\htdocs\\codeigniter4-first\\system\\HTTP\\Files\\UploadedFile.php', 184)
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(184): fopen('http://localhost/codeigniter4-first/public/uploads/index.html', 'x+b')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(135): CodeIgniter\HTTP\Files\UploadedFile->setPath('http://localhost/codeigniter4-first/public/uploads/')
+ 4 APPPATH\Controllers\FileUpload.php(24): CodeIgniter\HTTP\Files\UploadedFile->move('http://localhost/codeigniter4-first/public/uploads/', '1727005396_be81ec8b80476dfe528b.csv')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUpload->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUpload))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 11:47:32 --> ErrorException: fopen(http://localhost/codeigniter4-first/public/uploads/index.html): Failed to open stream: HTTP wrapper does not support writeable connections
+[Method: POST, Route: file_upload]
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 184.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(http://localhost/codeigniter4-first/public/uploads/index.html): Failed to open stream: HTTP wrapper does not support writeable connections', 'C:\\xampp\\htdocs\\codeigniter4-first\\system\\HTTP\\Files\\UploadedFile.php', 184)
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(184): fopen('http://localhost/codeigniter4-first/public/uploads/index.html', 'x+b')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(135): CodeIgniter\HTTP\Files\UploadedFile->setPath('http://localhost/codeigniter4-first/public/uploads/')
+ 4 APPPATH\Controllers\FileUpload.php(26): CodeIgniter\HTTP\Files\UploadedFile->move('http://localhost/codeigniter4-first/public/uploads/', '1727005652_23f0c4a8548d069f2855.csv')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUpload->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUpload))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 11:50:44 --> Error: Call to undefined method App\Controllers\FileUpload::setPath()
+[Method: POST, Route: file_upload]
+in APPPATH\Controllers\FileUpload.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUpload->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUpload))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 11:51:32 --> ErrorException: fopen(public/uploads/): Failed to open stream: No such file or directory
+[Method: POST, Route: file_upload]
+in APPPATH\Controllers\FileUpload.php on line 61.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(public/uploads/): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\codeigniter4-first\\app\\Controllers\\FileUpload.php', 61)
+ 2 APPPATH\Controllers\FileUpload.php(61): fopen('public/uploads/', 'r')
+ 3 APPPATH\Controllers\FileUpload.php(35): App\Controllers\FileUpload->parseCsv('public/uploads/')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUpload->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUpload))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 11:52:03 --> ErrorException: fopen(uploads/): Failed to open stream: No such file or directory
+[Method: POST, Route: file_upload]
+in APPPATH\Controllers\FileUpload.php on line 61.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(uploads/): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\codeigniter4-first\\app\\Controllers\\FileUpload.php', 61)
+ 2 APPPATH\Controllers\FileUpload.php(61): fopen('uploads/', 'r')
+ 3 APPPATH\Controllers\FileUpload.php(35): App\Controllers\FileUpload->parseCsv('uploads/')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUpload->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUpload))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 12:15:22 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: " Forbidden You don't have permission to access this resource"
+[Method: GET, Route: public/uploads/%20Forbidden%20You%20don%27t%20have%20permission%20to%20access%20this%20resource]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('public/uploads/ Forbidden You don\'t have permission to access this resource')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('public/uploads/ Forbidden You don\'t have permission to access this resource')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 12:49:54 --> CodeIgniter\HTTP\Exceptions\HTTPException: Could not move file "php3136.tmp" to "C:\xampp\htdocs\codeigniter4-first\writable\uploads/". Reason: 
+[Method: POST, Route: file_upload]
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 154.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(154): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('php3136.tmp', 'C:\\xampp\\htdocs\\codeigniter4-first\\writable\\uploads/', '')
+ 2 APPPATH\Controllers\FileUpload.php(26): CodeIgniter\HTTP\Files\UploadedFile->move('C:\\xampp\\htdocs\\codeigniter4-first\\writable\\uploads/', 'C:\\xampp\\htdocs\\codeigniter4-first\\writable\\uploads/1727009394_4a02b9c639d0aeffd04b.csv')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUpload->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUpload))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 12:50:12 --> CodeIgniter\HTTP\Exceptions\HTTPException: Could not move file "php78DF.tmp" to "C:\xampp\htdocs\codeigniter4-first\writable\uploads/". Reason: 
+[Method: POST, Route: file_upload]
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 154.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(154): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('php78DF.tmp', 'C:\\xampp\\htdocs\\codeigniter4-first\\writable\\uploads/', '')
+ 2 APPPATH\Controllers\FileUpload.php(26): CodeIgniter\HTTP\Files\UploadedFile->move('C:\\xampp\\htdocs\\codeigniter4-first\\writable\\uploads/', 'C:\\xampp\\htdocs\\codeigniter4-first\\writable\\uploads/1727009412_17365a7d00d348848875.csv')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUpload->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUpload))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 13:04:41 --> TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given
+[Method: POST, Route: file_upload]
+in APPPATH\Controllers\FileUpload.php on line 72.
+ 1 APPPATH\Controllers\FileUpload.php(72): in_array('phone', null)
+ 2 APPPATH\Controllers\FileUpload.php(29): App\Controllers\FileUpload->checkForDuplicates([...], null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUpload->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUpload))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 13:06:39 --> ErrorException: Undefined property: App\Controllers\FileUpload::$Tickets
+[Method: POST, Route: file_upload]
+in APPPATH\Controllers\FileUpload.php on line 98.
+ 1 APPPATH\Controllers\FileUpload.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\FileUpload::$Tickets', 'C:\\xampp\\htdocs\\codeigniter4-first\\app\\Controllers\\FileUpload.php', 98)
+ 2 APPPATH\Controllers\FileUpload.php(33): App\Controllers\FileUpload->saveData([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUpload->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUpload))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 13:17:16 --> ErrorException: Undefined variable $header
+[Method: POST, Route: file_upload]
+in APPPATH\Controllers\FileUpload.php on line 61.
+ 1 APPPATH\Controllers\FileUpload.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $header', 'C:\\xampp\\htdocs\\codeigniter4-first\\app\\Controllers\\FileUpload.php', 61)
+ 2 APPPATH\Controllers\FileUpload.php(30): App\Controllers\FileUpload->parseCsv('C:\\xampp\\htdocs\\codeigniter4-first\\writable\\uploads/1727011036_8f72188ff6ded7534b01.csv')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUpload->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUpload))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 13:20:10 --> ErrorException: Undefined array key "Name"
+[Method: POST, Route: file_upload]
+in APPPATH\Controllers\FileUpload.php on line 38.
+ 1 APPPATH\Controllers\FileUpload.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Name"', 'C:\\xampp\\htdocs\\codeigniter4-first\\app\\Controllers\\FileUpload.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUpload->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUpload))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 13:20:54 --> ErrorException: Undefined array key "Name"
+[Method: POST, Route: file_upload]
+in APPPATH\Controllers\FileUpload.php on line 37.
+ 1 APPPATH\Controllers\FileUpload.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Name"', 'C:\\xampp\\htdocs\\codeigniter4-first\\app\\Controllers\\FileUpload.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUpload->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUpload))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 13:23:17 --> ErrorException: Undefined array key 0
+[Method: POST, Route: file_upload]
+in APPPATH\Controllers\FileUpload.php on line 37.
+ 1 APPPATH\Controllers\FileUpload.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\codeigniter4-first\\app\\Controllers\\FileUpload.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUpload->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUpload))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 13:26:32 --> ErrorException: Undefined array key "Name"
+[Method: POST, Route: file_upload]
+in APPPATH\Controllers\FileUpload.php on line 39.
+ 1 APPPATH\Controllers\FileUpload.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Name"', 'C:\\xampp\\htdocs\\codeigniter4-first\\app\\Controllers\\FileUpload.php', 39)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUpload->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUpload))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 13:28:55 --> ErrorException: Undefined array key "Name"
+[Method: POST, Route: file_upload]
+in APPPATH\Controllers\FileUpload.php on line 40.
+ 1 APPPATH\Controllers\FileUpload.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Name"', 'C:\\xampp\\htdocs\\codeigniter4-first\\app\\Controllers\\FileUpload.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUpload->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUpload))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 13:30:58 --> ErrorException: Undefined array key "Name"
+[Method: POST, Route: file_upload]
+in APPPATH\Controllers\FileUpload.php on line 46.
+ 1 APPPATH\Controllers\FileUpload.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Name"', 'C:\\xampp\\htdocs\\codeigniter4-first\\app\\Controllers\\FileUpload.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUpload->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUpload))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 13:32:24 --> ErrorException: Undefined array key "Name"
+[Method: POST, Route: file_upload]
+in APPPATH\Controllers\FileUpload.php on line 46.
+ 1 APPPATH\Controllers\FileUpload.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Name"', 'C:\\xampp\\htdocs\\codeigniter4-first\\app\\Controllers\\FileUpload.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUpload->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUpload))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 13:34:02 --> ErrorException: Undefined array key "name"
+[Method: POST, Route: file_upload]
+in APPPATH\Controllers\FileUpload.php on line 37.
+ 1 APPPATH\Controllers\FileUpload.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\codeigniter4-first\\app\\Controllers\\FileUpload.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUpload->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUpload))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 13:34:16 --> ErrorException: Undefined array key "Name"
+[Method: POST, Route: file_upload]
+in APPPATH\Controllers\FileUpload.php on line 37.
+ 1 APPPATH\Controllers\FileUpload.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Name"', 'C:\\xampp\\htdocs\\codeigniter4-first\\app\\Controllers\\FileUpload.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUpload->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUpload))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 13:35:53 --> ErrorException: Undefined array key 0
+[Method: POST, Route: file_upload]
+in APPPATH\Controllers\FileUpload.php on line 38.
+ 1 APPPATH\Controllers\FileUpload.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\codeigniter4-first\\app\\Controllers\\FileUpload.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUpload->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUpload))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 13:36:13 --> ErrorException: Undefined array key 0
+[Method: POST, Route: file_upload]
+in APPPATH\Controllers\FileUpload.php on line 38.
+ 1 APPPATH\Controllers\FileUpload.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\codeigniter4-first\\app\\Controllers\\FileUpload.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUpload->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUpload))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 13:36:21 --> ErrorException: Undefined array key 0
+[Method: POST, Route: file_upload]
+in APPPATH\Controllers\FileUpload.php on line 38.
+ 1 APPPATH\Controllers\FileUpload.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\codeigniter4-first\\app\\Controllers\\FileUpload.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUpload->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUpload))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 13:40:27 --> ErrorException: Undefined array key "email"
+[Method: POST, Route: file_upload]
+in APPPATH\Controllers\FileUpload.php on line 65.
+ 1 APPPATH\Controllers\FileUpload.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\codeigniter4-first\\app\\Controllers\\FileUpload.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUpload->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUpload))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 13:40:51 --> ErrorException: Undefined variable $address
+[Method: POST, Route: file_upload]
+in APPPATH\Controllers\FileUpload.php on line 78.
+ 1 APPPATH\Controllers\FileUpload.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $address', 'C:\\xampp\\htdocs\\codeigniter4-first\\app\\Controllers\\FileUpload.php', 78)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUpload->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUpload))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 13:41:01 --> ErrorException: Undefined variable $address
+[Method: POST, Route: file_upload]
+in APPPATH\Controllers\FileUpload.php on line 78.
+ 1 APPPATH\Controllers\FileUpload.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $address', 'C:\\xampp\\htdocs\\codeigniter4-first\\app\\Controllers\\FileUpload.php', 78)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUpload->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUpload))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 13:43:16 --> ErrorException: Undefined array key "Name"
+[Method: POST, Route: file_upload]
+in APPPATH\Controllers\FileUpload.php on line 46.
+ 1 APPPATH\Controllers\FileUpload.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Name"', 'C:\\xampp\\htdocs\\codeigniter4-first\\app\\Controllers\\FileUpload.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUpload->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUpload))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 13:45:20 --> ErrorException: Undefined array key "Name"
+[Method: POST, Route: file_upload]
+in APPPATH\Controllers\FileUpload.php on line 46.
+ 1 APPPATH\Controllers\FileUpload.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Name"', 'C:\\xampp\\htdocs\\codeigniter4-first\\app\\Controllers\\FileUpload.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUpload->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUpload))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 13:46:03 --> ErrorException: Undefined array key "Name"
+[Method: POST, Route: file_upload]
+in APPPATH\Controllers\FileUpload.php on line 46.
+ 1 APPPATH\Controllers\FileUpload.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Name"', 'C:\\xampp\\htdocs\\codeigniter4-first\\app\\Controllers\\FileUpload.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUpload->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUpload))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 13:53:50 --> ErrorException: Undefined array key "Name"
+[Method: POST, Route: file_upload]
+in APPPATH\Controllers\FileUpload.php on line 37.
+ 1 APPPATH\Controllers\FileUpload.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Name"', 'C:\\xampp\\htdocs\\codeigniter4-first\\app\\Controllers\\FileUpload.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUpload->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUpload))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 13:56:38 --> ErrorException: Undefined array key "Name"
+[Method: POST, Route: file_upload]
+in APPPATH\Controllers\FileUpload.php on line 37.
+ 1 APPPATH\Controllers\FileUpload.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Name"', 'C:\\xampp\\htdocs\\codeigniter4-first\\app\\Controllers\\FileUpload.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUpload->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUpload))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 13:58:40 --> ErrorException: Undefined array key "Name"
+[Method: POST, Route: file_upload]
+in APPPATH\Controllers\FileUpload.php on line 37.
+ 1 APPPATH\Controllers\FileUpload.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Name"', 'C:\\xampp\\htdocs\\codeigniter4-first\\app\\Controllers\\FileUpload.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUpload->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUpload))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 14:04:43 --> ErrorException: Undefined property: App\Controllers\FileUpload::$Tickets
+[Method: POST, Route: file_upload]
+in APPPATH\Controllers\FileUpload.php on line 37.
+ 1 APPPATH\Controllers\FileUpload.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\FileUpload::$Tickets', 'C:\\xampp\\htdocs\\codeigniter4-first\\app\\Controllers\\FileUpload.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUpload->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUpload))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 14:09:15 --> ErrorException: Undefined property: App\Controllers\FileUpload::$Tickets
+[Method: POST, Route: file_upload]
+in APPPATH\Controllers\FileUpload.php on line 36.
+ 1 APPPATH\Controllers\FileUpload.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\FileUpload::$Tickets', 'C:\\xampp\\htdocs\\codeigniter4-first\\app\\Controllers\\FileUpload.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUpload->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUpload))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-22 14:12:28 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\Tickets"
+[Method: POST, Route: file_upload]
+in SYSTEMPATH\Model.php on line 824.
+ 1 SYSTEMPATH\Model.php(824): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Tickets')
+ 2 SYSTEMPATH\BaseModel.php(821): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\FileUpload.php(42): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUpload->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUpload))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
